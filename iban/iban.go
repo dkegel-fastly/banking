@@ -91,6 +91,15 @@ func Validate(value string) error {
 	return err
 }
 
+// ValidateWithLength validates iban code and returns the total length of the IBAN string.
+func ValidateWithLength(value string) (int, error) {
+	struc, err := validate(value)
+	if err != nil {
+		return 0, err
+	}
+	return 4 + struc.Length(), nil
+}
+
 // New validates and creates new iban code.
 // Deprecated: Use Parse instead.
 func New(value string) (*Iban, error) {

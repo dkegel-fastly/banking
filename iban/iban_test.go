@@ -436,6 +436,9 @@ func TestValidateValid(t *testing.T) {
 		t.Run(cs.iban, func(t *testing.T) {
 			err := Validate(cs.iban)
 			require.NoError(t, err)
+			length, err := ValidateWithLength(cs.iban)
+			require.NoError(t, err)
+			require.Equal(t, length, len(cs.iban))
 		})
 	}
 }
