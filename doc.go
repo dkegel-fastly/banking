@@ -9,7 +9,7 @@ IBAN:
         "fmt"
         "log"
 
-        "github.com/jbub/banking/iban"
+        "github.com/dkegel-fastly/banking/iban"
     )
 
     var (
@@ -39,7 +39,7 @@ Swift:
         "fmt"
         "log"
 
-        "github.com/jbub/banking/swift"
+        "github.com/dkegel-fastly/banking/swift"
     )
 
     var (

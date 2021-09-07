@@ -1,7 +1,7 @@
 package country
 
 import (
-	"github.com/jbub/banking/bban"
+	"github.com/dkegel-fastly/banking/bban"
 )
 
 var (
